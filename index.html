@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Playing with Flexbox</title>
+<style>
+.flex-container {
+    display: flex;
+    background-color: #180ACC;
+}
+.flex-container > div {
+    background-color: #2663F1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 23px;
+}
+.stack > div {
+    flex-direction: column;
+    padding: 20px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+.section_L {
+    flex-grow: 3;
+}
+	.ui-tabs .ui-tabs-nav {
+		font-size: 10px;
+	}
+.section_R {
+    flex-grow: 2;
+}
+</style>
+<link rel="stylesheet" href="../flexbox/jquery-ui.css">
+<link rel="stylesheet" href="../flexbox/jquery-ui.structure.css">
+<link rel="stylesheet" href="../flexbox/jquery-ui.theme.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+		  $( function() {
+    $( "#stars" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+<div id="container">
+  <h1>Astronomy Today</h1>
+  <p>Hello everyone my name is Michael, and this is my new website on our solar system. </p>
+  <p>I have organized this website as my first attempt at coding and playing with fonts, sizes, and other elements. <a href="https://mikeitaylor.github.io/html01/">See this example </a>from GitHub.io </p>
+  <p><strong>What is the Universe made of?</strong> The Universe is made up of many galaxies.</p>
+  <p>Galaxies are made of gases, dust, and stars. Galaxies are held together with a gravity. </p>
+  <div class="flex-container">
+    <div class="section_L">Our Solar Sytem is confined of</div>
+    <div class="stack section_R">
+      <div>The Sun</div>
+      <div>Eight Planets</div>
+    </div>
+  </div>
+  <p>Planets in our Solar System&nbsp;</p>
+  <div class="flex-container">
+    <div class="section_L">The Inner Most Planets</div>
+    <div class="stack section_R">
+      <div>The Outer Most Planets</div>
+   
+    </div>
+    <div class="section_L">
+      <div id="accordion">
+        <h3>The inter most planets</h3>
+        <div>
+          <p> Mercury, Venus, Earth, and Mars.</p>
+        </div>
+        <h3>The outer most planets</h3>
+        <div>
+          <p> Jupiter, Saturn, Neptune, and Uranus. </p>
+        </div>
+        <h3>Dwarf Planets</h3>
+        <div>
+          <p> In our Solar System there are also five offically recognized Dwarf Planets. </p>
+          <ul>
+            <li>Pluto</li>
+            <li>Ceres</li>
+            <li>Makemake</li>
+			<li>Haumea</li>
+			<li>Eris</li>
+          </ul>
+        </div>
+        <h3>Other</h3>
+        <div>
+          <p> Millions of comets, asteroids, and meteoroids as well as hundreds of moons also compose our Solar Sytem </p>
+          <p> All these things in our solar system all orbit the sun with a gravitational pull, the sun is a giant star which provides light and heat to all of the planets.  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>Events in Astronomy</p>
+  <div class="flex-container">
+    <div class="section_L">
+      <div id="stars">
+        <ul>
+          <li><a href="#tabs-1">Eclipse</a></li>
+          <li><a href="#tabs-2">Meteor Shower</a></li>
+          <li><a href="#tabs-3">Moon Phases</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>The next upcoming solar eclipse is estimated to be on April 8, 2024</p>
+        </div>
+        <div id="tabs-2">
+          <p>The next major Meteor shower is predicted to be sometime between November 19th to December 24th, 2024. The peak days of this event are estimated to be on December 13th-14th 2024.</p>
+        </div>
+        <div id="tabs-3">
+          <p>The next full moon will be on the 27th of November 2024.</p>
+        </div>
+      </div>
+    </div>
+    <div class="stack section_R">
+      <div>There are always astronomical events taking place</div>
+      <div>Keep an eye out at night for shooting stars and other undetceted phenomena</div>
+    </div>
+    <div class="section_L">There are also other websites you can use to astronomical insight, if you live in heavily light polluted area there are aslo apps you can download on your phone or mobile device that will help locate where you are and show what is in your night sky view. </div>
+  </div>
+  <p> This is what make our universe and there are more galaxies out there than just ours.</p>
+  <div class="flex-container">
+    <div class="section_L" style="flex: 50%;">Recently, there have been more rumor of discoveries on other life forms. I will provide a link to an article that include opinions on said rumor's.&nbsp; &nbsp; &nbsp;&nbsp; <a href="https://www.newsweek.com/did-government-confirm-aliens-exist-ufo-congress-hearings-1817251">Tom Norton</a></div>
+    <div class="stack section_R" style="flex: 50%;">
+      <div>You have the choice to believe whatever you want.</div>
+      <div>There are many diffrent astronomical conspiracies you will hear you have to decide weather the mean something to you or not. Some conspiracies include...</div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div style="flex: 33.33%;" >One conspiracy being we faked the moon landing</div>
+    <div style="flex: 33.33%;">Another conspiracy is NASA is a fake goernment business</div>
+    <div style="flex: 33.33%;">The last conspiracy i will use as example is the Earth being flat</div>
+  </div>
+</div>
+</body>
+	<p> Button Demonstration</p>
+<body><html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Button - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).on( "click", function( event ) {
+      event.preventDefault();
+    } );
+  } );
+  </script>
+</head>
+<body>
+<div class="widget">
+  <h1>Planets</h1>
+  <button>Earth</button>
+ 
+  <input type="submit" value="A submit button">
+ 
+  <a href="#">Sun</a>
+</div>
+<h1>Dwarf Planets</h1>
+<button class="ui-button ui-widget ui-corner-all">Mars</button>
+ 
+<input class="ui-button ui-widget ui-corner-all" type="submit" value="A submit button">
+ 
+<a class="ui-button ui-widget ui-corner-all" href="#">Pluto</a>
+ 
+ 
+</body>
+</html></body>
+</html>
